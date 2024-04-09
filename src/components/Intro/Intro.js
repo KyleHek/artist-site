@@ -7,7 +7,7 @@ export default function Intro() {
                 <div className="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-12">
                     <div className="space-y-4">
                         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                            The Art of Molly Lester
+                        The Art of Molly Lester
                         </h1>
                         <p className="text-gray-500 dark:text-gray-400">
                             Gallery is dedicated to showcasing the finest contemporary art from emerging and established artists.

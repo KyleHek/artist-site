@@ -16,10 +16,10 @@ export default function Navbar({ isScrolled }) {
             <Link to="/gallery">Gallery</Link>
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
-            Blog
+            <Link to="/blog">Blog</Link>
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
-            About
+            <Link to="/about">About</Link>
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
             Contact
