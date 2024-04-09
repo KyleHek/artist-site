@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import HomeSection from '../components/HomeSection/HomeSection';
 
-import Banner from '../components/Banner/Banner';
 import Gallery from '../components/Gallery/Gallery';
 
 import Footer from '../components/Footer/Footer';
+
+import { Route, Routes } from "react-router-dom";
 import './App.css';
+
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +29,10 @@ function App() {
   return (
     <div className="App">
       <Navbar isScrolled={isScrolled} />
-      <Banner />
+      <Routes>
+        <Route path="/" element={<HomeSection />} />  
+        <Route path="/home" element={<HomeSection />} />
+      </Routes>
       <Gallery />
       <Footer isScrolled={isScrolled}/>
     </div>

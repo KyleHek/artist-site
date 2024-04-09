@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Navbar({ isScrolled }) {
   return (
     <nav className={`fixed top-0 z-10 bg-white border-b shadow-md gap-4 text-sm font-medium px-4 w-full transition-all duration-500 ease-in-out ${isScrolled ? 'py-4' : 'py-8'}`}> 
@@ -8,7 +10,7 @@ export default function Navbar({ isScrolled }) {
         </div>
         <nav className="flex-1 gap-20 justify-center hidden lg:flex flex-row list-none">
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
-            Home
+            <Link to="/">Home</Link>
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
             Gallery
