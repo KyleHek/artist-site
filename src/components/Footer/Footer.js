@@ -1,6 +1,6 @@
 export default function Footer({ isScrolled }) {
   return (
-    <footer className={`bg-gray-700 text-white py-4 px-4 w-full ${isScrolled ? 'h-20' : 'h-16'} transition-all duration-300 ease-in-out bottom-0 z-10`}>
+    <footer className="bg-gray-700 text-white py-4 px-4 w-full bottom-0 z-10">
         <div className="flex justify-around items-center">
           <div className="text-sm">© 2024 Molly Lester</div>
             <div className="flex space-x-4">

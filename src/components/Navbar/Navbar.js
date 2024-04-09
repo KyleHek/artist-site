@@ -13,7 +13,7 @@ export default function Navbar({ isScrolled }) {
             <Link to="/">Home</Link>
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
-            Gallery
+            <Link to="/gallery">Gallery</Link>
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
             Blog
