@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Routes } from "react-router-dom";
+
 import Navbar from '../components/Navbar/Navbar';
 import HomeSection from '../components/HomeSection/HomeSection';
-
-import Gallery from '../components/Gallery/Gallery';
-
+import GallerySection from '../components/GallerSection/GallerySection';
 import Footer from '../components/Footer/Footer';
 
-import { Route, Routes } from "react-router-dom";
 import './App.css';
 
 
@@ -32,8 +31,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeSection />} />  
         <Route path="/home" element={<HomeSection />} />
+        <Route path="/gallery" element={<GallerySection />} />
       </Routes>
-      <Gallery />
       <Footer isScrolled={isScrolled}/>
     </div>
   );
