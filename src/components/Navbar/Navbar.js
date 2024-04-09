@@ -1,17 +1,20 @@
 export default function Navbar({ isScrolled }) {
   return (
-    <nav className={`fixed top-0 z-10 bg-white border-b shadow-md gap-4 text-sm font-medium px-4 w-full transition-all duration-300 ease-in-out ${isScrolled ? 'py-1' : 'py-4'}`}> 
+    <nav className={`fixed top-0 z-10 bg-white border-b shadow-md gap-4 text-sm font-medium px-4 w-full transition-all duration-500 ease-in-out ${isScrolled ? 'py-4' : 'py-8'}`}> 
       <div className="flex items-center">
-        <div className={`flex items-center space-x-2 hover:text-blue-900 ${isScrolled ? 'h-16' : 'h-20'}`} href="#">
+        <div className="flex items-center space-x-2 hover:text-blue-900" href="#">
             <PaletteIcon className="h-8 w-8 cursor-pointer opacity-90" />
-            <span className="font-serif italic cursor-pointer text-3xl sm:text-2xl opacity-90">Molly Lester</span>
+            <span className="font-serif italic cursor-pointer text-3xl lg:text-2xl opacity-90">Molly Lester</span>
         </div>
-        <nav className="flex-1 gap-20 justify-center hidden sm:flex flex-row list-none">
+        <nav className="flex-1 gap-20 justify-center hidden lg:flex flex-row list-none">
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
             Home
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
             Gallery
+            </li>
+            <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
+            Blog
             </li>
             <li className="mx-1 cursor-pointer opacity-90 hover:text-blue-900" href="#">
             About
